@@ -3,15 +3,9 @@
         "psr-4": {
             "Boilr\\App\\": "src/"
         }
-    },
-    "repositories":[
-        {
-            "type": "path",
-            "url": "boilr-core"
-        }
-    ],    
+    },  
     "require": {
-        "websystemspl/boilr-core": "dev-main",
+        "websystemspl/boilr-core": "^1.0",
         "symfony/finder": "^6.3"
     },
     "require-dev": {
