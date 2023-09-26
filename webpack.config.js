@@ -13,6 +13,7 @@ Encore
             ...options,
             liveReload: true,
             allowedHosts: 'all',
+            host: '0.0.0.0',
             watchFiles: {
                 paths: ['src/**/*.php', 'templates/**/*', 'assets/**/*'],
             }
