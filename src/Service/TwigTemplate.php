@@ -2,9 +2,8 @@
 
 namespace Boilr\App\Service;
 
-use Twig\Environment;
-
-use Websystems\BoilrCore\Interface\TemplateInterface;
+//use Twig\Environment;
+use Websystems\BoilrCore\Interfaces\TemplateInterface;
 
 class TwigTemplate implements TemplateInterface
 {
