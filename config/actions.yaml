@@ -1,0 +1,7 @@
+actions:
+  testuje:
+    hook: testowy_hook
+    controller: 'Boilr\App\Controller\TestController'
+    priority: 10
+    action: testAction
+    params: 2

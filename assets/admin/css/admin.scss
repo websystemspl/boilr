@@ -1,0 +1,49 @@
+.boilr-test {
+    min-height: 81vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 20px 20px 20px 0;
+    height: 100%;
+    padding: 50px 0;
+    flex-direction: column;
+
+    &__logo {
+        margin-bottom: 0px;
+
+        svg {
+            width: 200px;
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    &__description {
+        font-size: 1rem;
+    }
+
+    &__button {
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: 0;
+            background: #1A323E;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            cursor: pointer;
+
+            &:hover {
+                background: #122229;
+            }
+        }
+    }
+}

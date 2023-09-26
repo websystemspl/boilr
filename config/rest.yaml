@@ -1,0 +1,8 @@
+rest:
+  boilr/v1/test:
+    route_namespace: boilr/v2
+    route: /test
+    args: 
+      methods: GET
+      callback: Boilr\App\Controller\TestController::apiTest
+    override: false

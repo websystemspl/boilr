@@ -1,0 +1,33 @@
+parameters:
+  ## Default template system
+  # template.system: 'Websystems\BoilrCore\Service\PhpTemplate'
+
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  ## Add Event Subscriber services to Event Dispatcher
+  Symfony\Component\EventDispatcher\EventDispatcherInterface:
+    public: true
+    class: Symfony\Component\EventDispatcher\EventDispatcher
+    calls:
+    #  - addSubscriber: ['@Boilr\App\EventSubscriber\TestSubscriber']  
+
+
+  ## Twig templates ###############################################################
+  ## - composer require "twig/twig:^3.0"
+  ## - Uncomment services below
+  ## - change/set template.system parameter to Boilr\App\Service\TwigTemplate
+
+  # twig_loader:
+  #   public: true
+  #   class: Twig\Loader\FilesystemLoader
+  #   arguments: ['%app_path%/templates']
+
+  # Twig\Environment:
+  #   public: true
+  #   class: Twig\Environment
+  #   arguments: ['@twig_loader', {cache: false}]
+
+  ## Twig templates ###############################################################

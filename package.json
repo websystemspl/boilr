@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@symfony/webpack-encore": "^4.4.0",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "webpack-notifier": "^1.15.0"
+  },
+  "scripts": {
+    "dev-server": "encore dev-server --public http://darek.localhost:8080 --host 0.0.0.0",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-class-properties": "^7.22.5"
+  }
+}

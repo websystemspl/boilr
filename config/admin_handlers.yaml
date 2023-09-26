@@ -1,0 +1,4 @@
+admin_handlers:
+  test_handler:
+    controller: Boilr\App\Controller\TestController
+    action: testHandler

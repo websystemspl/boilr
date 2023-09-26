@@ -1,0 +1,8 @@
+{
+  "dist/admin.css": "http://darek.localhost:8080/dist/admin.css",
+  "dist/admin.js": "http://darek.localhost:8080/dist/admin.js",
+  "dist/front.css": "http://darek.localhost:8080/dist/front.css",
+  "dist/front.js": "http://darek.localhost:8080/dist/front.js",
+  "dist/runtime.js": "http://darek.localhost:8080/dist/runtime.js",
+  "dist/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-44cd4b.js": "http://darek.localhost:8080/dist/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-44cd4b.js"
+}

@@ -1,0 +1,12 @@
+admin_routes:
+  - {
+    parent_slug: null,
+    page_title: 'Boilr',
+    menu_title: 'Boilr',
+    capability: 'manage_options',
+    menu_slug: 'boilr',
+    controller: 'Boilr\App\Controller\TestController',
+    action: 'index',
+    iconUrl: 'dashicons-admin-tools',
+    position: 1,
+  }
