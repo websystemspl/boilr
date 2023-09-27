@@ -1,0 +1,5 @@
+ajax:
+  test_ajax:
+    controller: 'Boilr\App\Controller\TestController'
+    action: ajaxAction
+    no_priv: true

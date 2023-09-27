@@ -1403,16 +1403,16 @@
         },
         {
             "name": "websystemspl/boilr-core",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websystemspl/boilr-core.git",
-                "reference": "15bbb5dd461e9f11054177a765b061cbf9866504"
+                "reference": "3672b4d3c57234d62a4f1504e556991452afcf09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websystemspl/boilr-core/zipball/15bbb5dd461e9f11054177a765b061cbf9866504",
-                "reference": "15bbb5dd461e9f11054177a765b061cbf9866504",
+                "url": "https://api.github.com/repos/websystemspl/boilr-core/zipball/3672b4d3c57234d62a4f1504e556991452afcf09",
+                "reference": "3672b4d3c57234d62a4f1504e556991452afcf09",
                 "shasum": ""
             },
             "require": {
@@ -1442,9 +1442,9 @@
             ],
             "support": {
                 "issues": "https://github.com/websystemspl/boilr-core/issues",
-                "source": "https://github.com/websystemspl/boilr-core/tree/1.0.8"
+                "source": "https://github.com/websystemspl/boilr-core/tree/1.0.9"
             },
-            "time": "2023-09-26T09:47:05+00:00"
+            "time": "2023-09-27T07:58:13+00:00"
         }
     ],
     "packages-dev": [
