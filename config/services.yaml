@@ -7,6 +7,24 @@ services:
     autoconfigure: true
     autowire: true
 
+  # Load App Files
+  Boilr\App\:
+    resource: '%app_path%/src/'
+    exclude:
+        - '%app_path%/src/Controller/'
+    public: true
+
+  # Load App Controllers
+  Boilr\App\Controller\:
+    resource: '%app_path%/src/Controller'
+    parent: Websystems\BoilrCore\Controller
+    public: true
+
+  # Load App Event Subscribers
+  Boilr\App\EventSubscriber\:
+    resource: '%app_path%/src/EventSubscriber'
+    public: true
+
   ## Add Event Subscriber services to Event Dispatcher
   Symfony\Component\EventDispatcher\EventDispatcherInterface:
     public: true
