@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
 .boilr-test {
+font-family: 'Roboto', sans-serif;
     min-height: 81vh;
     display: flex;
     align-items: center;
@@ -46,4 +49,39 @@
             }
         }
     }
+}
+
+.flash-notices {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.flash-notice {
+font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: #0070e0;
+    border-radius: 15px;
+    color: #ffffff;
+    -webkit-animation: 3s ease 0s normal forwards 1 fadeout;
+    animation: 3s ease 0s normal forwards 1 fadeout;   
+
+    h3 {
+        margin:0;
+        padding:0;
+        color: #ffffff;
+    }
+}
+
+@keyframes fadeout{
+    0% { opacity:1; }
+    66% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadeout{
+    0% { opacity:1; }
+    66% { opacity:1; }
+    100% { opacity:0; }
 }

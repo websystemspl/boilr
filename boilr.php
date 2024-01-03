@@ -8,7 +8,7 @@
 * Text Domain: boilr
 */
 
-/* Avoid direct execute file  */
+/* Avoid direct file execution  */
 defined('ABSPATH') || exit;
 
 /* Autoload files */

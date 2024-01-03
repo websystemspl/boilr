@@ -1,4 +1,12 @@
 
+<div class="flash-notices">
+<?php
+foreach ($session->getFlashBag()->get('success', []) as $message) {
+    echo '<div class="flash-notice">'.$message.'</div>';
+}
+?>
+</div>
+
 <div class="wrap boilr-test">
     <div class="boilr-test__logo">
         <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
@@ -54,6 +62,7 @@
     <div class="boilr-test__title">Boilr</div>
     <div class="boilr-test__description">Wordpress Plugin Boilerplate</div>
     <div class="boilr-test__button">
+        <button class="dupa">kliknij</button>
         <form action="<?=esc_url( admin_url( 'admin-post.php' ) ) ?>" method="post">
             <input type="hidden" name="action" value="test_handler">
             <button type="submit">Test handler</button>

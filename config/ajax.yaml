@@ -3,3 +3,7 @@ ajax:
     controller: 'Boilr\App\Controller\TestController'
     action: ajaxAction
     no_priv: true
+  test_ajax_admin:
+    controller: 'Boilr\App\Controller\TestController'
+    action: ajaxAdminAction
+    no_priv: false

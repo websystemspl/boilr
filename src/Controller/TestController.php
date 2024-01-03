@@ -2,6 +2,8 @@
 
 namespace Boilr\App\Controller;
 
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Websystems\BoilrCore\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -17,25 +19,23 @@ class TestController extends Controller
     public function index()
     {   
         return $this->render('index.php', [
-            'test_arg' => "Testowy parametr"
-        ]);
-    }
-
-    public function layout()
-    {   
-        return $this->render('dashboard.html.twig', [
-
+            'test_arg' => "Testowy parametr",
+            'dupa' => "test"
         ]);
     }
 
     public function testHandler()
     {
-        dump($this->request);
+        $this->addFlash("success", "<h3>Hi there!</h3> Your handler sent flash message and redirected you to previous page.");
+        $response =  new RedirectResponse(admin_url('admin.php?page=boilr'));
+        $response->send();
     }
 
     public function testAction(...$args)
     {
         //dump($args);
+        
+
     }
 
     public function testFilterAction(...$args)
@@ -46,5 +46,16 @@ class TestController extends Controller
     public function apiTest()
     {
         return "1";
+    }
+
+    public function ajaxAdminAction()
+    {
+        $response = new JsonResponse($this->request);
+        $response->send();
+    }
+
+    public function configAction()
+    {
+        
     }
 }
