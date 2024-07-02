@@ -17,4 +17,4 @@ require __DIR__ . '/vendor/autoload.php';
 /* Wordpress texdomain for translations */
 load_plugin_textdomain('boilr', false, dirname(plugin_basename(__FILE__)) . '/languages');
 
-new Websystems\BoilrCore\Bootstrap(__DIR__);
+new Websystems\BoilrCore\Bootstrap(__FILE__);

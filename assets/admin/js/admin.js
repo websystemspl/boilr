@@ -4,8 +4,7 @@ import '../css/admin.scss';
 let $ = jQuery;
 
 $( document ).ready(function() {
-    $(".dupa").on('click', function() {
-
+    $(".testbutton").on('click', function() {
         $.ajax({
             type : "GET",
             dataType : "json",

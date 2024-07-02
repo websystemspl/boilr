@@ -62,7 +62,7 @@ foreach ($session->getFlashBag()->get('success', []) as $message) {
     <div class="boilr-test__title">Boilr</div>
     <div class="boilr-test__description">Wordpress Plugin Boilerplate</div>
     <div class="boilr-test__button">
-        <button class="dupa">kliknij</button>
+        <button type="button" class="testbutton">kliknij</button>
         <form action="<?=esc_url( admin_url( 'admin-post.php' ) ) ?>" method="post">
             <input type="hidden" name="action" value="test_handler">
             <button type="submit">Test handler</button>
